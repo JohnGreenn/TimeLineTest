@@ -108,16 +108,13 @@ public class TimeDividerAdapter extends RecyclerView.Adapter<TimeDividerAdapter.
 
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        //@BindView(R.id.tv_item)
         TextView tvItem;
-        //@BindView(R.id.ll_layout)
         LinearLayout llLayout;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvItem = itemView.findViewById(R.id.tv_item);
             llLayout = itemView.findViewById(R.id.ll_layout);
-
-            //ButterKnife.bind(this,itemView);
         }
     }
 

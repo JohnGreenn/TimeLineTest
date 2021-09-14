@@ -43,12 +43,12 @@ public class TimeAxisDivider extends RecyclerView.ItemDecoration {
     private List<LogisticsInfoBean> dataBeanList;
     public TimeAxisDivider(Context context, List<LogisticsInfoBean> logisticsInfoBeans) {
         this.context = context;
-        paint=  new Paint();
+        paint = new Paint();
         paint.setAntiAlias(true);
         paint.setColor(context.getResources().getColor(R.color.gray_deep));
         paint.setTextSize(16);
         paint.setTextAlign(Paint.Align.RIGHT);
-        padding =  ScreenUtil.dip2px(context,12);
+        padding = ScreenUtil.dip2px(context,12);
         this.dataBeanList = logisticsInfoBeans;
     }
 
@@ -64,7 +64,7 @@ public class TimeAxisDivider extends RecyclerView.ItemDecoration {
             //1.先画 1 px 的竖线
             int startX = leftOffset-30;
             int startY = child.getTop();
-            int lineStopY = startY+padding;
+            int lineStopY = startY + padding;
             paint.setColor(context.getResources().getColor(R.color.gray_deep));
             //画图形上半部分竖线
             canvas.drawLine(startX,startY,startX,lineStopY,paint);
