@@ -65,7 +65,6 @@ public class TimeAxisDivider extends RecyclerView.ItemDecoration {
             int startX = leftOffset-30;
             int startY = child.getTop();
             int lineStopY = startY + padding;
-            paint.setColor(context.getResources().getColor(R.color.gray_deep));
             //画图形上半部分竖线
             canvas.drawLine(startX,startY,startX,lineStopY,paint);
             //2.画图形
